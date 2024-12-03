@@ -38,7 +38,7 @@
 
 
 ## 👨‍💻 Todo
-- [ ] Release Code (Coming soon !!! )
+- [ ] Release Code (Open source in January 2025)
 
 ## ✒️ Citation
 If you find our work helpful for your research, please consider giving a star ⭐ and citation 📝
