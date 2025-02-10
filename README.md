@@ -30,10 +30,7 @@
 </p>
 
 
-<!-- 
-<video class="video img-fluid" loop autoplay muted>
-    <source src="assets/web_case_video.mp4" />
-</video> -->
+
 ![](assets/layerpano3d.png)
 
 
