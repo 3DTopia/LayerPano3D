@@ -1,0 +1,66 @@
+
+if (WIN32)
+    MESSAGE("Configure for Windows platform.")
+    #############################
+    # SET RUN-TIME ENV
+    #############################
+    unset(RUNTIMT_ENV_PATH_LIST)
+    SET(RUNTIMT_ENV_PATH_LIST "PATH=%PATH%")
+
+    #############################
+    # DEPENDENCIES DIR
+    #############################
+    # python 
+    set(Python3_ROOT_DIR "C:/Program Files/Python38")
+
+    # Numpy
+    set(Python3_NumPy_INCLUDE_DIR "D:/workenv_windows/python_3_8_instaomnidepth/Lib/site-packages/numpy/core/include")
+
+    # gflags
+    set(gflags_DIR "D:/libraries_windows/glog/glog_with_gflags_0.5.0_msvc_14_2/gflags-2.2.2-bin/lib/cmake/gflags/")
+    LIST(APPEND RUNTIMT_ENV_PATH_LIST "D:/libraries_windows/glog/glog_with_gflags_0.5.0_msvc_14_2/gflags-2.2.2-bin/bin/")
+
+    # glog
+    set(glog_DIR "D:/libraries_windows/glog/glog_with_gflags_0.5.0_msvc_14_2/glog-0.5.0-bin/lib/cmake/glog/")
+    LIST(APPEND RUNTIMT_ENV_PATH_LIST "D:/libraries_windows/glog/glog_with_gflags_0.5.0_msvc_14_2/glog-0.5.0-bin/bin/")
+ 
+    # OpenCV
+    set(OpenCV_DIR "D:/libraries_windows/opencv/opencv-4.5.3-vc14_vc15/build")
+    LIST(APPEND RUNTIMT_ENV_PATH_LIST "D:/libraries_windows/opencv/opencv-4.5.3-vc14_vc15/build/x64/vc15/bin/")
+
+    # Ceres
+    set(Ceres_DIR "D:/libraries_windows/ceres/ceres-solver-2.0.0-bin-wo-optim/CMake")
+    LIST(APPEND RUNTIMT_ENV_PATH_LIST "D:/libraries_windows/ceres/ceres-solver-2.0.0-bin-wo-optim/bin/")
+
+    # GTest 
+    set(GTEST_INCLUDE_DIR "D:/libraries_windows/gtest/googletest-release-1.11.0-bin/include")
+    set(GTEST_LIBRARY "D:/libraries_windows/gtest/googletest-release-1.11.0-bin/lib/gtest.lib")
+    set(GETST_LIBRARY_DEBUG "D:/libraries_windows/gtest/googletest-release-1.11.0-bin/lib/gtestd.lib")
+    set(GTEST_MAIN_LIBRARY "D:/libraries_windows/gtest/googletest-release-1.11.0-bin/lib/gtest_main.lib")
+    set(GTEST_MAIN_LIBRARY_DEBUG "D:/libraries_windows/gtest/googletest-release-1.11.0-bin/lib/gtest_maind.lib")
+
+    # Boost
+    set(Boost_DIR "D:/libraries_windows/boost/boost_1_76_0/")
+    set(Boost_INCLUDE_DIR "D:/libraries_windows/boost/boost_1_76_0/")
+
+    # OpenBLAS runtime
+    LIST(APPEND RUNTIMT_ENV_PATH_LIST "D:/libraries_windows/openblas/OpenBLAS-0.3.9-bin/bin/")
+
+    #############################
+    # SET RUN-TIME ENV
+    #############################
+    unset(RUNTIMT_ENV_PATH_STR)
+    string(JOIN ";" RUNTIMT_ENV_PATH_STR ${RUNTIMT_ENV_PATH_LIST})
+    #string(CONCAT ";" RUNTIMT_ENV_PATH_STR ${RUNTIMT_ENV_PATH_LIST})
+
+    unset(RUNTIMT_ENV_PATH)
+    set(RUNTIMT_ENV_PATH ${RUNTIMT_ENV_PATH_STR} CACHE STRING "vs runtime env" FORCE)
+    MESSAGE(STATUS "DEBUG: RUNTIMT_ENV_PATH_STR=${RUNTIMT_ENV_PATH}")
+endif()
+
+if(LINUX)
+    MESSAGE("Configure for Linux platform.")
+    #set(Python3_ROOT_DIR "/mnt/d/workenv_wsl/python3_8_com/bin/Python3")
+    # Numpy
+    set(Python3_NumPy_INCLUDE_DIR "/home/PJLAB/yangshuai/anaconda3/envs/layerpano/lib/python3.8/site-packages/numpy/core/include/")
+endif()

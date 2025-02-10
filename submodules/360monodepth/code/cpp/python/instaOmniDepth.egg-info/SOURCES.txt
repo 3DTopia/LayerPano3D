@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+./instaOmniDepth/EigenSolvers.cpython-39-x86_64-linux-gnu.so
+./instaOmniDepth/__init__.py
+./instaOmniDepth/depthmapAlignModule.cpp
+./instaOmniDepth/libdepth_stitch.so
+instaOmniDepth.egg-info/PKG-INFO
+instaOmniDepth.egg-info/SOURCES.txt
+instaOmniDepth.egg-info/dependency_links.txt
+instaOmniDepth.egg-info/requires.txt
+instaOmniDepth.egg-info/top_level.txt

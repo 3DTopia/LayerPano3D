@@ -1,0 +1,9 @@
+colorama>=0.4.4
+matplotlib>=3.4.1
+scikit-image>=0.18.1
+scipy>=1.6.2
+opencv-python>=4.5.1.48
+torch>=1.8.1
+torchvision>=0.9.1
+wheel>=0.36.2
+timm>=0.4.12
