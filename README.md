@@ -92,7 +92,7 @@ pip install dist/instaOmniDepth-0.1.0-cp39-cp39-linux_x86_64.whl # if failed, pl
 ```
 
 - **Checkpoints Download**: 
-  - Download the Panorama LoRA [checkpoint](https://huggingface.co/ysmikey/Layerpano3D-FLUX-Panorama-LoRA/resolve/main/lora_hubs/pano_lora_720*1440_v1.safetensors?download=true) and put it in the ``checkpoints`` folder.
+  - Download the Panorama LoRA [checkpoint](https://huggingface.co/ysmikey/Layerpano3D-FLUX-Panorama-LoRA/resolve/main/lora_hubs/pano_lora_720*1440_v1.safetensors?download=true) and put it in the ``checkpoints`` folder. We will release more powerful and better panorama_lora_v2.safetensors() in the future, now version-1 is avaliable in [huggingface](https://huggingface.co/ysmikey/Layerpano3D-FLUX-Panorama-LoRA).
   - Download the Lama [checkpoint](https://huggingface.co/lllyasviel/Annotators/resolve/main/ControlNetLama.pth?download=true) and put it in the ``checkpoints`` folder.
   - Download the SAM model ViT-H [checkpoints](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth) and put it in the ``checkpoints`` folder.
   - Download the Depth-Anything-V2-Large [checkpoints](https://huggingface.co/depth-anything/Depth-Anything-V2-Large/resolve/main/depth_anything_v2_vitl.pth?download=true) and put it in the ``checkpoints`` folder.
