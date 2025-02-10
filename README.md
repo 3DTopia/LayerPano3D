@@ -114,6 +114,21 @@ bash run.sh
 ```
 If you want to try or debug each stage in our pipeline, we also provide a complete [running results](https://drive.google.com/drive/folders/1op5qimyAcr1-k7-8lgOwg-sWa4_qiG1T?usp=drive_link) (including each step).
 
+### 🌆 Rendering:
+In the generated 3DGS panoramic scene, the resulting folder contains files formatted as ``gsplat_layer{id}.ply``, where ``id`` represents the index of the layer. The number of layers varies across different cases. Notably, the 3dgs file corresponding to the maximum id value represents the final 3D scene result.
+
+```sh
+bash render.sh
+```
+
+### 🌉 Visualize `.ply` files
+
+
+We recommend use [@playcanvas](https://github.com/playcanvas)'s [Super-Splat](https://github.com/playcanvas/super-splat) project ([Live demo](https://playcanvas.com/super-splat)). 
+![](assets/supersplat.png)
+
+
+
 ## 📧 Contact Us
 Shuai Yang: [yang_shuai@sjtu.edu.cn](mailto:yang_shuai@sjtu.edu.cn)  
 Jing Tan: [tj023@ie.cuhk.edu.hk](mailto:tj023@ie.cuhk.edu.hk)  
