@@ -98,7 +98,7 @@ pip install dist/instaOmniDepth-0.1.0-cp39-cp39-linux_x86_64.whl # if failed, pl
   - Download the Depth-Anything-V2-Large [checkpoints](https://huggingface.co/depth-anything/Depth-Anything-V2-Large/resolve/main/depth_anything_v2_vitl.pth?download=true) and put it in the ``checkpoints`` folder.
   - Download the Infusion [checkpoint](https://huggingface.co/Johanan0528/Infusion/tree/main) and put it in the ``checkpoints/Infusion`` folder.
   - [**Optional**] Download the PASD related checkpoints. **If you do not need SR panorama for better visual quality, this step can be skip**.
-    - Download SD1.5 models from [huggingface](https://huggingface.co/runwayml/stable-diffusion-v1-5) and put them into ``checkpoints/pasd/stable-diffusion-v1-5``. 
+    - Download SD1.5 models from [huggingface](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5) and put them into ``checkpoints/pasd/stable-diffusion-v1-5``. 
     - Download PASD pre-trained models [pasd](https://public-vigen-video.oss-cn-shanghai.aliyuncs.com/robin/models/PASD/pasd.zip) and put them into ``checkpoints/pasd/checkpoint-100000``. 
 
 

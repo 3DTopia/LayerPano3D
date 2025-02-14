@@ -1,54 +1,49 @@
-
-
-# loguru
-# peft
-# protobuf
-# sentencepiece
-# einops
-# plyfile
-# pyyaml
-# tqdm
-# numpy
-# easydict==1.9.0
-# scikit-image
-# opencv-python
-# joblib
-# matplotlib
-# pandas
-# albumentations==0.5.2
-# hydra-core==1.1.0
-# pytorch-lightning==2.4.0
-# tabulate
-# kornia
-# webdataset
-# packaging
-# scikit-learn
-# wldhx.yadisk-direct
-# diffusers==0.32.0
-# transformers==4.45.2
-# git+https://github.com/facebookresearch/segment-anything.git
-# imageio-ffmpeg==0.4.9 
-# colorama
-# cython
-# # scipy==1.8.1
-# shapely
-# h5py==3.7.0
-# submitit==1.4.2
-# # timm==0.4.12
-# einops==0.4.1
-# icecream==2.1.2
-# setuptools==59.5.0
-# ftfy==6.1.1
-# regex==2022.6.2
-# inflect==5.6.0
-# diffdist==0.1
-# mmcv
-# -f https://shi-labs.com/natten/wheels/cu118/torch2.4.0/index.html
-# natten==0.14.4
-# ultralytics
-# open_clip_torch
+loguru==0.7.3
+peft==0.14.0
+protobuf==5.29.3
+sentencepiece==0.2.0
+einops==0.4.1
+plyfile==1.1
+pyyaml==6.0.2
+tqdm==4.67.1
+numpy==1.26.3
+easydict==1.9.0
+scikit-image==0.24.0
+opencv-python
+joblib==1.4.2
+matplotlib
+pandas==2.2.3
+albumentations==0.5.2
+hydra-core==1.1.0
+pytorch-lightning==2.4.0
+tabulate==0.9.0
+kornia==0.8.0
+webdataset==0.2.100
+packaging==24.2
+scikit-learn==1.6.1
+wldhx.yadisk-direct
+diffusers==0.32.0
+transformers==4.45.2
+git+https://github.com/facebookresearch/segment-anything.git
+imageio-ffmpeg==0.4.9 
+colorama==0.4.6
+cython==3.0.11
+shapely==2.0.7
+h5py==3.7.0
+submitit==1.4.2
+einops==0.4.1
+icecream==2.1.2
+setuptools==59.5.0
+ftfy==6.1.1
+regex==2022.6.2
+inflect==5.6.0
+diffdist==0.1
+mmcv
+-f https://shi-labs.com/natten/wheels/cu118/torch2.4.0/index.html
+natten==0.14.4
+ultralytics==8.3.74
+open_clip_torch==2.30.0
 
 
 
 
-# pip install -r requirements.txt
