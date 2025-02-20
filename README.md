@@ -39,7 +39,7 @@
 ### 🔧 Installation:
 - Prepare Environment
 ```sh
-conda create -n imagine360 python==3.9
+conda create -n layerpano3d python==3.9
 conda activate layerpano3d
 pip install -r requirements.txt
 pip install timm==0.4.12 --no-deps
