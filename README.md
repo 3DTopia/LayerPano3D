@@ -1,4 +1,4 @@
-# LayerPano3D: Layered 3D Panorama for Hyper-Immersive Scene Generation
+# LayerPano3D: Layered 3D Panorama for Hyper-Immersive Scene Generation((SIGGRAPH 2025))
 
 
 [**Project page**](https://ys-imtech.github.io/projects/LayerPano3D/) | [**Paper**](https://arxiv.org/abs/2408.13252) | [**Video**](https://youtu.be/lpNs5JwaJoA?si=SLNJM7JoBRcsoUg0) | [**Huggingface**](https://huggingface.co/ysmikey/Layerpano3D-FLUX-Panorama-LoRA)
