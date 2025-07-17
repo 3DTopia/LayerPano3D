@@ -77,8 +77,15 @@ sudo make install
 cd ../../ 
 
 # ceres-solver
+
 git clone -b 1.14.0 https://github.com/ceres-solver/ceres-solver
+
+
+The dependency of Ceres, the TBB library, includes version information in the `tbb_stddef.h` file, which was removed starting from TBB version 2021.1. The `version.h` file in the same directory contains similar content. Replacing `tbb_stddef.h` with `version.h` in line 224 of the `FindTBB.cmake` file allows the compilation to proceed successfully.
+
+
 mkdir build && cd build
+
 cmake .. -DCMAKE_BUILD_TYPE=Release \
          -DBUILD_TESTING=OFF \
          -DBUILD_EXAMPLES=OFF \
