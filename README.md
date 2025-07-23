@@ -19,6 +19,7 @@ This repository is the official implementation of LayerPano3D
 [Dahua Lin✉️](http://dahua.me/)
 
 <p style="font-size: 0.6em; margin-top: -1em">*Equal Contribution,   ✉️Corresponding author</p>
+
 Accepted by SIGGRAPH 2025
 
 
