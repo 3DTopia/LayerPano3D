@@ -3,7 +3,7 @@ This repository is the official implementation of LayerPano3D
 
 
 
-[**Project page**](https://ys-imtech.github.io/projects/LayerPano3D/) | [**Paper**](https://arxiv.org/abs/2408.13252) | [**Video**](https://youtu.be/lpNs5JwaJoA?si=SLNJM7JoBRcsoUg0) | [**Huggingface**](https://huggingface.co/ysmikey/Layerpano3D-FLUX-Panorama-LoRA)
+[**Project page**](https://ys-imtech.github.io/projects/LayerPano3D/) | [**Paper**](https://arxiv.org/abs/2408.13252) | [**Dataset**](https://huggingface.co/datasets/ysmikey/Layerpano3D_PanoData) | [**Huggingface**](https://huggingface.co/ysmikey/Layerpano3D-FLUX-Panorama-LoRA)
 
 ![](assets/teaser.jpeg)
 
@@ -25,6 +25,7 @@ Accepted by SIGGRAPH 2025
 <p align="center">
 <a href="https://arxiv.org/abs/2408.13252"><img src="https://img.shields.io/badge/arXiv-Paper-<color>"></a>
 <a href="https://ys-imtech.github.io/projects/LayerPano3D/"><img src="https://img.shields.io/badge/Project-Website-red"></a>
+<a href="https://huggingface.co/datasets/ysmikey/Layerpano3D_PanoData"><img src="https://img.shields.io/badge/Dataset-Huggingface-yellow"></a>
 <a href="https://www.youtube.com/watch?v=dXvoFRbHOiw"><img src="https://img.shields.io/static/v1?label=Demo&message=Video&color=orange"></a>
 <a href="" target='_blank'>
 <img src="https://visitor-badge.laobi.icu/badge?page_id=YS-IMTech.LayerPano3D" />
@@ -35,8 +36,8 @@ Accepted by SIGGRAPH 2025
 
 ![](assets/layerpano3d.png)
 
-
-
+### ✨ Updates:
+[2025-07-23] 🔥 Release our 360 Panorama dataset Upright360, please check and download it on [**Huggingface Dataset**](https://huggingface.co/datasets/ysmikey/Layerpano3D_PanoData).
 
 ### 🔧 Installation:
 - Prepare Environment
@@ -144,5 +145,4 @@ If you find our work helpful for your research, please consider giving a star �
   year={2024}
 }
 ```
-
 
