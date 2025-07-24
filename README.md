@@ -49,6 +49,13 @@ pip install xformers==0.0.27.post2 --index-url https://download.pytorch.org/whl/
 pip install -e submodules/diff-gaussian-rasterization
 pip install -e submodules/simple-knn
 ```
+```
+# # git+https://github.com/facebookresearch/segment-anything.git
+# mmcv
+# -f https://shi-labs.com/natten/wheels/cu118/torch2.4.0/index.html
+# natten==0.14.4
+
+```
 
 - Install `PyTorch`. We have tested on `torch2.4.0+cu118`, but other versions should also work fine.
 ```sh
