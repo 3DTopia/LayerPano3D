@@ -51,6 +51,13 @@ pip install xformers==0.0.27.post2 --index-url https://download.pytorch.org/whl/
 pip install -e submodules/diff-gaussian-rasterization
 pip install -e submodules/simple-knn
 ```
+```
+# # git+https://github.com/facebookresearch/segment-anything.git
+# mmcv
+# -f https://shi-labs.com/natten/wheels/cu118/torch2.4.0/index.html
+# natten==0.14.4
+
+```
 
 - Install `PyTorch`. We have tested on `torch2.4.0+cu118`, but other versions should also work fine.
 ```sh
@@ -79,8 +86,27 @@ sudo make install
 cd ../../ 
 
 # ceres-solver
+
 git clone -b 1.14.0 https://github.com/ceres-solver/ceres-solver
-cd ceres-solver && mkdir build && cd build
+
+
+The dependency of Ceres, the TBB library, includes version information in the `tbb_stddef.h` file, which was removed starting from TBB version 2021.1. The `version.h` file in the same directory contains similar content. Replacing `tbb_stddef.h` with `version.h` in line 224 of the `FindTBB.cmake` file allows the compilation to proceed successfully.
+
+
+mkdir build && cd build
+
+cmake .. -DCMAKE_BUILD_TYPE=Release \
+         -DBUILD_TESTING=OFF \
+         -DBUILD_EXAMPLES=OFF \
+         -DEIGENSPARSE=ON \
+         -DSUITESPARSE=OFF \
+         -DCXSPARSE=ON \
+         -DGFLAGS=ON
+
+#You don't need Ceres' tests—just turn them off by setting BUILD_TESTING=OFF.
+#This is the quickest and most stable fix, and it won’t affect any later steps in LayerPano3D.
+
+
 cmake .. && make -j8 
 sudo make install 
 cd ../../../  
